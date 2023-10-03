@@ -42,8 +42,7 @@ module.exports = {
           590: '590px',
         },
         backgroundImage: {
-          'hero-pattern':
-            "url('https://img.freepik.com/premium-vector/site-stats-concept-illustration_86047-404.jpg?size=626&ext=jpg')",
+          'hero-pattern': "url('./data/heroBgImg.jpg')"
         },
       },
     },
