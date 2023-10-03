@@ -12,6 +12,7 @@ import { useStateContext } from '../contexts/ContextProvider'
 import {ecomBgImg} from "../data/dummy"
 
 const Ecommerce = () => {
+  const {currentColor} = useStateContext()
   return (
     <div className='mt-12'>
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
@@ -23,7 +24,7 @@ const Ecommerce = () => {
             </div>
             <button
               type="button"
-              style={{ backgroundColor: "royalblue" }}
+              style={{ backgroundColor: currentColor }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4"
             >
               <BsCurrencyDollar />
@@ -32,7 +33,7 @@ const Ecommerce = () => {
           <div className='mt-6'>
             <Button 
               color="white"
-              bgColor={"royalblue"}
+              bgColor={currentColor}
               text="Download"
               borderRadius={10}
               size={"sm"}
@@ -94,7 +95,7 @@ const Ecommerce = () => {
               </div>
               <div className='mt-5'>
                 <SparkLine
-                  currentColor="royalblue"
+                  currentColor={currentColor}
                   id="line-sparkline"
                   type="Line"
                   height="80px"
@@ -106,7 +107,7 @@ const Ecommerce = () => {
               <div className="mt-10">
                 <Button
                   color="white"
-                  bgColor="royalblue"
+                  bgColor={currentColor}
                   text="Download Report"
                   borderRadius={10}
                   size={"sm"}
