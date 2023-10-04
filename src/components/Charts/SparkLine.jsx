@@ -15,6 +15,7 @@ const SparkLine = ({id, height, width, data, color, currentColor, type}) => {
       xName='xval'
       yName='yval'
       type={type}
+      legendSettings={{ background: 'white' }}
       tooltipSettings={{
         visible: true,
         format: "${xval} : data ${yval}"
